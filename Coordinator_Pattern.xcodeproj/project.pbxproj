@@ -41,6 +41,12 @@
 		84DA5BD22C9B34CA003DAA7B /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DA5BD12C9B34C9003DAA7B /* DetailViewModel.swift */; };
 		84DA5BD42C9B34DC003DAA7B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DA5BD32C9B34DB003DAA7B /* HomeViewModel.swift */; };
 		84DA5BD72C9B3547003DAA7B /* PokemonDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84DA5BD52C9B3547003DAA7B /* PokemonDataModel.xcdatamodeld */; };
+		84DA5BD92C9B378D003DAA7B /* Coordinaotr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DA5BD82C9B378A003DAA7B /* Coordinaotr.swift */; };
+		84DA5BE02C9B3893003DAA7B /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DA5BDF2C9B388F003DAA7B /* HomeCoordinator.swift */; };
+		84DA5BEA2C9B3C5B003DAA7B /* DetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DA5BE92C9B3C56003DAA7B /* DetailCoordinator.swift */; };
+		84DA5BEF2C9B3EC3003DAA7B /* FavouriteCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DA5BEE2C9B3EBE003DAA7B /* FavouriteCoordinator.swift */; };
+		84DA5BF42C9B425D003DAA7B /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DA5BF32C9B4256003DAA7B /* DashBoardViewController.swift */; };
+		84DA5BF62C9B42A7003DAA7B /* DashBoardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DA5BF52C9B42A1003DAA7B /* DashBoardCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +84,12 @@
 		84DA5BD12C9B34C9003DAA7B /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		84DA5BD32C9B34DB003DAA7B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		84DA5BD62C9B3547003DAA7B /* PokemonDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PokemonDataModel.xcdatamodel; sourceTree = "<group>"; };
+		84DA5BD82C9B378A003DAA7B /* Coordinaotr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinaotr.swift; sourceTree = "<group>"; };
+		84DA5BDF2C9B388F003DAA7B /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		84DA5BE92C9B3C56003DAA7B /* DetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCoordinator.swift; sourceTree = "<group>"; };
+		84DA5BEE2C9B3EBE003DAA7B /* FavouriteCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteCoordinator.swift; sourceTree = "<group>"; };
+		84DA5BF32C9B4256003DAA7B /* DashBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardViewController.swift; sourceTree = "<group>"; };
+		84DA5BF52C9B42A1003DAA7B /* DashBoardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,33 +126,13 @@
 			children = (
 				84DA5B8F2C9B31D0003DAA7B /* App */,
 				84DA5B8E2C9B31CA003DAA7B /* Model */,
-				84DA5B8D2C9B31C7003DAA7B /* View */,
-				84DA5B8C2C9B31C4003DAA7B /* ViewModel */,
+				84DA5BDA2C9B382A003DAA7B /* Feature */,
 				84DA5B7F2C9B3198003DAA7B /* Assets.xcassets */,
 				84DA5B802C9B3198003DAA7B /* Info.plist */,
 				84DA5B822C9B3198003DAA7B /* LaunchScreen.storyboard */,
 				84DA5BD52C9B3547003DAA7B /* PokemonDataModel.xcdatamodeld */,
 			);
 			path = Coordinator_Pattern;
-			sourceTree = "<group>";
-		};
-		84DA5B8C2C9B31C4003DAA7B /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				84DA5BD32C9B34DB003DAA7B /* HomeViewModel.swift */,
-				84DA5BD12C9B34C9003DAA7B /* DetailViewModel.swift */,
-				84DA5BCF2C9B34BA003DAA7B /* FavouriteViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		84DA5B8D2C9B31C7003DAA7B /* View */ = {
-			isa = PBXGroup;
-			children = (
-				84DA5BBE2C9B3400003DAA7B /* Screens */,
-				84DA5BBD2C9B33FD003DAA7B /* Cells */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		84DA5B8E2C9B31CA003DAA7B /* Model */ = {
@@ -225,32 +217,154 @@
 		84DA5B962C9B3215003DAA7B /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				84DA5BD82C9B378A003DAA7B /* Coordinaotr.swift */,
 				84DA5B972C9B3250003DAA7B /* BindView.swift */,
 				84DA5B992C9B3262003DAA7B /* BindViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
 		};
-		84DA5BBD2C9B33FD003DAA7B /* Cells */ = {
+		84DA5BDA2C9B382A003DAA7B /* Feature */ = {
 			isa = PBXGroup;
 			children = (
-				84DA5BCD2C9B34A2003DAA7B /* HomeViewCell.swift */,
-				84DA5BCB2C9B348F003DAA7B /* FavouriteViewCell.swift */,
+				84DA5BF02C9B4222003DAA7B /* DashBoardScreen */,
+				84DA5BDB2C9B383A003DAA7B /* HomeScreen */,
+				84DA5BE12C9B3BD6003DAA7B /* DetailScreen */,
+				84DA5BE52C9B3C1B003DAA7B /* FavouriteScreen */,
 			);
-			path = Cells;
+			path = Feature;
 			sourceTree = "<group>";
 		};
-		84DA5BBE2C9B3400003DAA7B /* Screens */ = {
+		84DA5BDB2C9B383A003DAA7B /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				84DA5BDE2C9B3851003DAA7B /* Coordinators */,
+				84DA5BDD2C9B3847003DAA7B /* Views */,
+				84DA5BDC2C9B383F003DAA7B /* ViewModels */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		84DA5BDC2C9B383F003DAA7B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				84DA5BD32C9B34DB003DAA7B /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		84DA5BDD2C9B3847003DAA7B /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				84DA5BC92C9B3475003DAA7B /* HomeView.swift */,
 				84DA5BC72C9B3464003DAA7B /* HomeViewController.swift */,
-				84DA5BC52C9B3451003DAA7B /* DetailView.swift */,
+				84DA5BCD2C9B34A2003DAA7B /* HomeViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		84DA5BDE2C9B3851003DAA7B /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				84DA5BDF2C9B388F003DAA7B /* HomeCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		84DA5BE12C9B3BD6003DAA7B /* DetailScreen */ = {
+			isa = PBXGroup;
+			children = (
+				84DA5BE42C9B3BF1003DAA7B /* Coordinators */,
+				84DA5BE32C9B3BEF003DAA7B /* Views */,
+				84DA5BE22C9B3BEC003DAA7B /* ViewModels */,
+			);
+			path = DetailScreen;
+			sourceTree = "<group>";
+		};
+		84DA5BE22C9B3BEC003DAA7B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				84DA5BD12C9B34C9003DAA7B /* DetailViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		84DA5BE32C9B3BEF003DAA7B /* Views */ = {
+			isa = PBXGroup;
+			children = (
 				84DA5BC32C9B343D003DAA7B /* DetailViewController.swift */,
+				84DA5BC52C9B3451003DAA7B /* DetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		84DA5BE42C9B3BF1003DAA7B /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				84DA5BE92C9B3C56003DAA7B /* DetailCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		84DA5BE52C9B3C1B003DAA7B /* FavouriteScreen */ = {
+			isa = PBXGroup;
+			children = (
+				84DA5BE82C9B3C2B003DAA7B /* Coordinators */,
+				84DA5BE72C9B3C28003DAA7B /* Views */,
+				84DA5BE62C9B3C25003DAA7B /* ViewModels */,
+			);
+			path = FavouriteScreen;
+			sourceTree = "<group>";
+		};
+		84DA5BE62C9B3C25003DAA7B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				84DA5BCF2C9B34BA003DAA7B /* FavouriteViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		84DA5BE72C9B3C28003DAA7B /* Views */ = {
+			isa = PBXGroup;
+			children = (
 				84DA5BC12C9B342A003DAA7B /* FavouriteView.swift */,
 				84DA5BBF2C9B3418003DAA7B /* FavouriteViewController.swift */,
+				84DA5BCB2C9B348F003DAA7B /* FavouriteViewCell.swift */,
 			);
-			path = Screens;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		84DA5BE82C9B3C2B003DAA7B /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				84DA5BEE2C9B3EBE003DAA7B /* FavouriteCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		84DA5BF02C9B4222003DAA7B /* DashBoardScreen */ = {
+			isa = PBXGroup;
+			children = (
+				84DA5BF22C9B4233003DAA7B /* Coordinator */,
+				84DA5BF12C9B4230003DAA7B /* Views */,
+			);
+			path = DashBoardScreen;
+			sourceTree = "<group>";
+		};
+		84DA5BF12C9B4230003DAA7B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84DA5BF32C9B4256003DAA7B /* DashBoardViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		84DA5BF22C9B4233003DAA7B /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				84DA5BF52C9B42A1003DAA7B /* DashBoardCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,15 +446,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84DA5BEF2C9B3EC3003DAA7B /* FavouriteCoordinator.swift in Sources */,
 				84DA5B9E2C9B3298003DAA7B /* SpritesModel.swift in Sources */,
 				84DA5B982C9B3252003DAA7B /* BindView.swift in Sources */,
 				84DA5BC22C9B342B003DAA7B /* FavouriteView.swift in Sources */,
+				84DA5BEA2C9B3C5B003DAA7B /* DetailCoordinator.swift in Sources */,
 				84DA5BB02C9B336C003DAA7B /* Constant.swift in Sources */,
 				84DA5BAC2C9B333D003DAA7B /* StorageProvider.swift in Sources */,
 				84DA5BC62C9B3452003DAA7B /* DetailView.swift in Sources */,
 				84DA5BC82C9B3465003DAA7B /* HomeViewController.swift in Sources */,
 				84DA5BA02C9B32AE003DAA7B /* PokemonDetailModel.swift in Sources */,
+				84DA5BF42C9B425D003DAA7B /* DashBoardViewController.swift in Sources */,
+				84DA5BD92C9B378D003DAA7B /* Coordinaotr.swift in Sources */,
 				84DA5BC42C9B343E003DAA7B /* DetailViewController.swift in Sources */,
+				84DA5BF62C9B42A7003DAA7B /* DashBoardCoordinator.swift in Sources */,
 				84DA5B9C2C9B327E003DAA7B /* ModelEntityMapProtocol.swift in Sources */,
 				84DA5B862C9B3198003DAA7B /* AppDelegate.swift in Sources */,
 				84DA5B872C9B3198003DAA7B /* SceneDelegate.swift in Sources */,
@@ -360,6 +479,7 @@
 				84DA5BD02C9B34BB003DAA7B /* FavouriteViewModel.swift in Sources */,
 				84DA5BCA2C9B3476003DAA7B /* HomeView.swift in Sources */,
 				84DA5BB22C9B337E003DAA7B /* Loader.swift in Sources */,
+				84DA5BE02C9B3893003DAA7B /* HomeCoordinator.swift in Sources */,
 				84DA5BA22C9B32C2003DAA7B /* PokemonListModel.swift in Sources */,
 				84DA5BD72C9B3547003DAA7B /* PokemonDataModel.xcdatamodeld in Sources */,
 			);

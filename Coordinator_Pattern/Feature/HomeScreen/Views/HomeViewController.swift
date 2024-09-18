@@ -8,6 +8,7 @@
 import UIKit
 
 class HomeViewController: BindViewController<HomeView, HomeViewModel> {
+    weak var coordinator: HomeCoordinator?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,12 +22,15 @@ class HomeViewController: BindViewController<HomeView, HomeViewModel> {
     }
     
     func navigate() {
+        print("navigate clicked")
         rootView.onTap = { [weak self] url in
             guard let self = self else { return }
-            let viewModel = DetailViewModel(url: url)
-            let view = DetailView(with: viewModel)
-            let vc = DetailViewController(with: view, and: viewModel)
-            navigationController?.pushViewController(vc, animated: true)
+            print("onTap clicked")
+            if let coordinator = coordinator {
+                coordinator.navigateToDetailScreen(url: url)
+            } else {
+                print("Could not find coordinator")
+            }
         }
     }
 }

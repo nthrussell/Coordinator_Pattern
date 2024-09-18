@@ -9,7 +9,8 @@ import UIKit
 import CoreData
 
 class FavouriteViewController: BindViewController<FavouriteView, FavouriteViewModel> {
-        
+    weak var coordinator: FavouriteCoordinator?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
