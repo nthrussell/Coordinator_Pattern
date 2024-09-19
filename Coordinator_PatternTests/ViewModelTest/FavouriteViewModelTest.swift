@@ -64,13 +64,17 @@ class FavouriteViewModelTest: XCTestCase {
     }
     
     func test_saveThreeFavouritesInDb_deleteOne_shouldReturnTwoFavouritesFromDB() {
+        sut.detailData.append(firstData)
+        sut.detailData.append(secondData)
+        sut.detailData.append(thirdData)
+        
         mockStorageService.storageProvider.saveData(data:firstData)
         mockStorageService.storageProvider.saveData(data:secondData)
         mockStorageService.storageProvider.saveData(data:thirdData)
         
         XCTAssertEqual(mockStorageService.getAllFavourites().count, 3)
         
-        sut.deleteFavourite(data: secondData)
+        sut.deleteFavourite(at: 1)
         
         XCTAssertEqual(mockStorageService.getAllFavourites().count, 2)
     }

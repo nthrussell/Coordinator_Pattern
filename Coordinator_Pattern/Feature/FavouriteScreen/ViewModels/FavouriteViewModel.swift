@@ -15,8 +15,6 @@ class FavouriteViewModel {
     
     init(favouriteStorageService: FavouriteStorageService = DefaultFavouriteStorageService()) {
         self.favouriteStorageService = favouriteStorageService
-        
-        getAllFavourites()
     }
     
     func getAllFavourites() {
@@ -24,7 +22,9 @@ class FavouriteViewModel {
         detailData = allData
     }
     
-    func deleteFavourite(data: PokemonDetailModel) {
+    func deleteFavourite(at index: Int) {
+        let data = detailData[index]
         favouriteStorageService.delete(data: data)
+        detailData.remove(at: index)
     }
 }

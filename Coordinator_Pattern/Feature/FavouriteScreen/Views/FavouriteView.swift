@@ -80,8 +80,8 @@ extension FavouriteView: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            let data = viewModel.detailData[indexPath.row]
-            viewModel.deleteFavourite(data: data)
+            viewModel.deleteFavourite(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }
 }

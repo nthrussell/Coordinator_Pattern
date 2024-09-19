@@ -25,12 +25,7 @@ class HomeViewController: BindViewController<HomeView, HomeViewModel> {
         print("navigate clicked")
         rootView.onTap = { [weak self] url in
             guard let self = self else { return }
-            print("onTap clicked")
-            if let coordinator = coordinator {
-                coordinator.navigateToDetailScreen(url: url)
-            } else {
-                print("Could not find coordinator")
-            }
+            coordinator?.navigateToDetailScreen(with: url)
         }
     }
 }

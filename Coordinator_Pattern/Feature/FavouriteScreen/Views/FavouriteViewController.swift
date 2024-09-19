@@ -16,18 +16,9 @@ class FavouriteViewController: BindViewController<FavouriteView, FavouriteViewMo
 
         // Do any additional setup after loading the view.
         navigationController?.navigationBar.topItem?.title = "My Favourites"
-        
-        viewModel.getAllFavourites()
-                        
-        let didSaveNotification = NSManagedObjectContext.didSaveObjectsNotification
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(didNewEntrySaved),
-                                               name: didSaveNotification,
-                                               object: nil)
     }
     
-    @objc func didNewEntrySaved() {
+    override func viewDidAppear(_ animated: Bool) {
         viewModel.getAllFavourites()
-        rootView.tableView.reloadData()
     }
 }

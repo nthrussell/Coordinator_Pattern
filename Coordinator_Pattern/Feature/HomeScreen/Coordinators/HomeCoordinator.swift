@@ -21,7 +21,7 @@ final class HomeCoordinator: Coordinator {
         navigationController.setViewControllers([homeViewController], animated: true)
     }
     
-    func navigateToDetailScreen(url: String) {
+    func navigateToDetailScreen(with url: String) {
         print("navigateToDetailScreen")
         childCoordinators.removeAll()
         childCoordinators.append(DegtailCoordinator(
