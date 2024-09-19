@@ -20,26 +20,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
 
-//        let tabBarController = UITabBarController()
-//        tabBarController.tabBar.tintColor = .purple
-//        
-//        let homeCoordinator = HomeCoordinator()
-//        homeCoordinator.start()
-//        
-//        let favouriteCoordinator = FavouriteCoordinator()
-//        favouriteCoordinator.start()
-//        
-//        let firstVC = homeCoordinator.navigationController
-//        let secondVC = favouriteCoordinator.navigationController
-//        
-//        firstVC.tabBarItem = UITabBarItem(title: "Home", image: UIImage(systemName: "house"), tag: 0)
-//        secondVC.tabBarItem = UITabBarItem(title: "Favourite", image: UIImage(systemName: "star"), tag: 1)
-//        
-//        tabBarController.viewControllers = [firstVC, secondVC]
-//        
-//        window?.rootViewController = tabBarController
-//        window?.makeKeyAndVisible()
-        
         let dashBoardCoordinator = DashBoardCoordinator(with: window)
         dashBoardCoordinator.start()
     }
