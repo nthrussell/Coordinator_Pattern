@@ -8,7 +8,7 @@
 import UIKit
 
 final class HomeCoordinator: Coordinator {
-    private(set) lazy var childCoordinators: [Coordinator] = []
+    lazy var childCoordinators: [Coordinator] = []
     let navigationController: BaseNavigationController = .init()
     
     func start() {

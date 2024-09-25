@@ -8,7 +8,7 @@
 import UIKit
 
 class DegtailCoordinator: Coordinator {
-    private(set) lazy var childCoordinators: [Coordinator] = []
+    lazy var childCoordinators: [Coordinator] = []
     private weak var navigationController: UINavigationController?
 
     let url: String

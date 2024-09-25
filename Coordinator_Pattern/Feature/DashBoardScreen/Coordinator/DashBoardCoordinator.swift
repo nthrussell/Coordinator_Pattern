@@ -15,7 +15,8 @@ class DashBoardCoordinator: Coordinator {
     
     init(with window: UIWindow?) {
         self.window = window
-        self.dashboardController = DashBoardViewController()
+        dashboardController = DashBoardViewController()
+        dashboardController.coordiantor = self
     }
     
     func start() {
@@ -39,9 +40,7 @@ class DashBoardCoordinator: Coordinator {
             firstVC,
             secondVC
         ]
-        
-        dashboardController.coordiantor = self
-        
+                
         window?.rootViewController = dashboardController
         window?.makeKeyAndVisible()
     }

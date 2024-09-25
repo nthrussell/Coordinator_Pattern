@@ -47,7 +47,6 @@
 		84DA5BEF2C9B3EC3003DAA7B /* FavouriteCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DA5BEE2C9B3EBE003DAA7B /* FavouriteCoordinator.swift */; };
 		84DA5BF42C9B425D003DAA7B /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DA5BF32C9B4256003DAA7B /* DashBoardViewController.swift */; };
 		84DA5BF62C9B42A7003DAA7B /* DashBoardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DA5BF52C9B42A1003DAA7B /* DashBoardCoordinator.swift */; };
-		84F436DF2C9BF7770079A525 /* Coordinator_PatternTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F436DD2C9BF7770079A525 /* Coordinator_PatternTests.swift */; };
 		84F436E72C9BF7D30079A525 /* DecodedPokemonList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F436E62C9BF7D20079A525 /* DecodedPokemonList.swift */; };
 		84F436E92C9BF7F60079A525 /* StorageProvider+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F436E82C9BF7F50079A525 /* StorageProvider+Extension.swift */; };
 		84F436EB2C9BF80D0079A525 /* DetailApiServiceStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F436EA2C9BF80B0079A525 /* DetailApiServiceStub.swift */; };
@@ -119,7 +118,6 @@
 		84DA5BF32C9B4256003DAA7B /* DashBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardViewController.swift; sourceTree = "<group>"; };
 		84DA5BF52C9B42A1003DAA7B /* DashBoardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardCoordinator.swift; sourceTree = "<group>"; };
 		84F436D42C9BF7670079A525 /* Coordinator_PatternTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Coordinator_PatternTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		84F436DD2C9BF7770079A525 /* Coordinator_PatternTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator_PatternTests.swift; sourceTree = "<group>"; };
 		84F436E62C9BF7D20079A525 /* DecodedPokemonList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodedPokemonList.swift; sourceTree = "<group>"; };
 		84F436E82C9BF7F50079A525 /* StorageProvider+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StorageProvider+Extension.swift"; sourceTree = "<group>"; };
 		84F436EA2C9BF80B0079A525 /* DetailApiServiceStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailApiServiceStub.swift; sourceTree = "<group>"; };
@@ -432,7 +430,6 @@
 				84F436E22C9BF7910079A525 /* ModelTest */,
 				84F436E12C9BF7890079A525 /* ViewTest */,
 				84F436E02C9BF7860079A525 /* ViewModelTest */,
-				84F436DD2C9BF7770079A525 /* Coordinator_PatternTests.swift */,
 			);
 			path = Coordinator_PatternTests;
 			sourceTree = "<group>";
@@ -664,7 +661,6 @@
 				84F436F32C9BF8620079A525 /* MockDetailStorageService.swift in Sources */,
 				84F436FD2C9BF8E50079A525 /* FavouriteViewTest.swift in Sources */,
 				84F436E72C9BF7D30079A525 /* DecodedPokemonList.swift in Sources */,
-				84F436DF2C9BF7770079A525 /* Coordinator_PatternTests.swift in Sources */,
 				84F436EF2C9BF8360079A525 /* NetworkProviderStub.swift in Sources */,
 				84F437052C9BF9460079A525 /* DetailViewModelTest.swift in Sources */,
 				84F436FB2C9BF8C70079A525 /* HomeApiServiceTest.swift in Sources */,
