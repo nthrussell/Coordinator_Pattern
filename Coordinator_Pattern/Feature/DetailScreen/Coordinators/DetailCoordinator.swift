@@ -21,7 +21,8 @@ class DegtailCoordinator: Coordinator {
     func start() {
         let viewModel = DetailViewModel(url: url)
         let view = DetailView(with: viewModel)
-        let vc = DetailViewController(with: view, and: viewModel)
-        navigationController?.pushViewController(vc, animated: true)
+        let detailViewController = DetailViewController(with: view, and: viewModel)
+        detailViewController.coordinator = self
+        navigationController?.pushViewController(detailViewController, animated: true)
     }
 }

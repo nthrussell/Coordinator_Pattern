@@ -9,7 +9,8 @@ import UIKit
 import Combine
 
 class DetailViewController: BindViewController<DetailView, DetailViewModel> {
-    
+    weak var coordinator: DegtailCoordinator?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
