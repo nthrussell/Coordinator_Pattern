@@ -36,7 +36,7 @@ class HomeViewTest: XCTestCase {
     override func tearDownWithError() throws {
         sut = nil
         viewModel = nil
-        super .tearDown()
+        super.tearDown()
     }
     
     func test_view_components() {
